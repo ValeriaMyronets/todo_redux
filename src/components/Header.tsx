@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
     setTempTodo,  
     setErrorMessage,
     addNewTodo,
-    changedTodo,
+    toggleTodo,
   } = useTodoState();
 
   const todoInput = useRef<HTMLInputElement>(null);
@@ -75,7 +75,7 @@ export const Header: React.FC = () => {
       todos.forEach((t) => {
         updateTodo({ ...t, completed: false })
           .then((todo: Todo) => {
-            changedTodo(todo);
+            toggleTodo(todo);
           })
           .catch(() => setErrorMessage('Unable to update a todo'));
       });
@@ -84,7 +84,7 @@ export const Header: React.FC = () => {
         .forEach((t) => {
           updateTodo({ ...t, completed: true })
             .then((todo: Todo) => {
-              changedTodo(todo);
+              toggleTodo(todo);
             })
             .catch(() => setErrorMessage('Unable to update a todo'));
         });
