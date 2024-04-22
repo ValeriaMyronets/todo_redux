@@ -1,9 +1,8 @@
-# React TypeScript Starter Pack
+# Todo App Redux
+This Todo App offers a straightforward online platform enabling users to organize their tasks effectively through functions like adding, editing, completing, and deleting tasks. It presents a user-friendly interface designed for streamlined task management.
 
-To use this template click `Use this template`
+## Demo
+[DemoLink](https://valeriamyronets.github.io/todo_redux/)
 
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+## Technologies
+- JavaScript, TypeScript, React, Redux
